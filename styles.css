@@ -1,9 +1,51 @@
+@font-face {
+  font-family: "Red Hat Display";
+  font-weight: 500;
+  src: local("RedHatDisplay-Regular"),
+    url("/assets/fonts/red-hat-display-v19-latin-500.woff2"),
+    url("/assets/fonts/red-hat-display-v19-latin-500.woff");
+}
+
+@font-face {
+  font-family: "Red Hat Display";
+  font-weight: 900;
+  src: local("RedHatDisplay-Black"),
+    url("/assets/fonts/red-hat-display-v19-latin-900.woff2"),
+    url("/assets/fonts/red-hat-display-v19-latin-900.woff");
+}
+
+/* --------------- CSS Reset --------------- */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+*:focus-visible {
+  outline: 0.125rem dotted var(--clr-primary-700);
+  outline-offset: 0.125rem;
+}
+
+img,
+svg,
+picture {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button {
+  font: inherit;
+}
+
+/* --------------- CSS Variables --------------- */
+:root {
+  --ff-red-hat-display: "Red Hat Display", sans-serif;
+}
+/* --------------- End of CSS Variables --------------- */
+
 body {
+  font-family: var(--ff-red-hat-display);
   background-color: gray;
 }
