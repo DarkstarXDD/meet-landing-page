@@ -35,6 +35,97 @@
   </head>
 
   <body>
-    <h1>hello, World!</h1>
+    <header class="header">
+      <img
+        class="logo-img"
+        src="/assets/images/logo.svg"
+        alt="meet"
+        width="120"
+        height="28"
+      />
+    </header>
+
+    <main class="main">
+      <section class="section hero-section">
+        <picture class="picture-left">
+          <source
+            media="(min-width: 64rem)"
+            srcset="/assets/images/desktop/image-hero-left.png"
+          />
+          <img
+            class="hero-img"
+            src="/assets/images/tablet/image-hero.png"
+            alt="profile pictures of multiple people"
+            width="820"
+            height="303"
+          />
+        </picture>
+
+        <div class="hero-content">
+          <h1 class="hero-title">Group Chat for Everyone</h1>
+          <p class="hero-description">
+            Meet makes it easy to connect with others face-to-face virtually and
+            collaborate across any device.
+          </p>
+          <div class="btns-wrapper">
+            <button class="btn btn-primary">
+              Download <span class="btn-primary-selection">v1.3</span>
+            </button>
+            <a class="btn btn-secondary" href="#">What is it?</a>
+          </div>
+        </div>
+
+        <picture class="picture-right">
+          <source
+            media="(min-width: 64rem)"
+            srcset="/assets/images/desktop/image-hero-right.png"
+          />
+          <img
+            class="hero-img"
+            src="/assets/images/tablet/image-hero.png"
+            alt="profile pictures of multiple people"
+            width="820"
+            height="303"
+          />
+        </picture>
+      </section>
+
+      <section class="section content-section content-section-one">
+        <div><p>01</p></div>
+        <div class="image-grid">
+          <img src="" alt="" />
+          <img src="" alt="" />
+          <img src="" alt="" />
+          <img src="" alt="" />
+        </div>
+        <div class="content-wrapper-one">
+          <p class="ribbon-text">Built for modern use</p>
+          <h2 class="content-title content-title-one">
+            Smarter meetings, all in one place
+          </h2>
+          <p class="content-description content-description-one">
+            Send messages, share files, show your screen, and record your
+            meetings — all in one workspace. Control who can join with
+            invite-only team access, data encryption, and data export.
+          </p>
+        </div>
+      </section>
+
+      <section class="section content-section content-section-two">
+        <div><p>02</p></div>
+        <div class="content-wrapper-two">
+          <h2 class="content-title content-title-two">
+            Experience more together
+          </h2>
+          <p class="content-description content-description-two">
+            Stay connected with reliable HD meetings and unlimited one-on-one
+            and group video sessions.
+          </p>
+          <button class="btn btn-secondary">
+            Download <span class="btn-secondary-selection">v1.3</span>
+          </button>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
