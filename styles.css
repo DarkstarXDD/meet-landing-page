@@ -130,6 +130,7 @@ body {
 }
 
 .hero-title {
+  max-width: 20rem;
   font-size: var(--fs-primary-heading);
   color: var(--clr-primary-heading);
 }
@@ -221,7 +222,7 @@ body {
 }
 
 .content-wrapper-two {
-  max-width: 400px;
+  max-width: 37rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -231,11 +232,12 @@ body {
 }
 
 .content-title-two {
+  max-width: 22rem;
   color: var(--clr-secondary-heading);
 }
 
 .content-description-two {
-  max-width: 21.875rem;
+  max-width: 32rem;
   color: var(--clr-secondary-body);
   margin-bottom: 0.5rem;
 }
