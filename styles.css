@@ -106,6 +106,8 @@ body {
 }
 
 .main {
+  width: 100%;
+  max-width: 92.75rem;
   gap: 4rem;
 }
 
@@ -119,11 +121,13 @@ body {
 }
 
 .hero-section {
+  display: grid;
+  place-items: center;
   gap: 3rem;
 }
 
 .hero-content {
-  max-width: 450px;
+  max-width: 28rem;
   gap: 1.5rem;
 }
 
@@ -175,6 +179,20 @@ body {
 
 .content-section-one {
   gap: 4rem;
+}
+
+.number-line {
+  height: 5.25rem;
+  border-left: 0.0625rem solid var(--clr-primary-body);
+}
+
+.number {
+  width: 3.5rem;
+  height: 3.5rem;
+  font-size: var(--fs-secondary-body);
+  font-weight: var(--fw-black);
+  border: 0.0625rem solid var(--clr-primary-body);
+  border-radius: 100%;
 }
 
 .image-grid {
@@ -245,6 +263,10 @@ body {
     --fs-900: 3rem;
   }
 
+  .main {
+    gap: 5rem;
+  }
+
   .hero-section {
     gap: 4.5rem;
   }
@@ -253,9 +275,14 @@ body {
     flex-direction: row;
   }
 
+  .content-section-one {
+    gap: 3rem;
+  }
+
   .image-grid {
     grid-template-columns: repeat(4, 1fr);
     gap: 0.75rem;
+    margin-top: 1rem;
   }
 
   .content-wrapper-one {
@@ -282,14 +309,26 @@ body {
     --fs-900: 4rem;
   }
 
+  .main {
+    gap: 4.5rem;
+  }
+
   .hero-section {
-    flex-direction: row;
-    gap: 0;
+    grid-template-columns: minmax(0rem, 24rem) 33.75rem minmax(0rem, 24rem);
+    gap: 5.5rem;
     padding: 0;
   }
 
+  .picture-left {
+    align-self: flex-start;
+  }
+
+  .picture-right {
+    align-self: flex-end;
+  }
+
   .hero-content {
-    max-width: 33.75rem;
+    max-width: none;
     gap: 2rem;
   }
 
@@ -303,6 +342,10 @@ body {
 
   .picture-right {
     display: block;
+  }
+
+  .content-section-one {
+    margin-top: 2.375rem;
   }
 
   .image-grid {
