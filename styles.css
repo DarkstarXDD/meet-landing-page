@@ -276,7 +276,7 @@ body {
   }
 }
 
-@media (min-width: 64rem) {
+@media (min-width: 80rem) {
   :root {
     --fs-400: 1.125rem;
     --fs-900: 4rem;
