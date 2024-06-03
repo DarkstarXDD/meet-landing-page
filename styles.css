@@ -106,10 +106,6 @@ body {
 }
 
 .main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   gap: 4rem;
 }
 
@@ -118,10 +114,6 @@ body {
 }
 
 .section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   text-align: center;
   padding: 0 1.5rem;
 }
@@ -132,10 +124,6 @@ body {
 
 .hero-content {
   max-width: 450px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   gap: 1.5rem;
 }
 
@@ -146,10 +134,6 @@ body {
 }
 
 .btns-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   gap: 1rem;
   margin-top: 0.5rem;
 }
@@ -190,10 +174,6 @@ body {
 }
 
 .content-section-one {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   gap: 4rem;
 }
 
@@ -210,9 +190,6 @@ body {
 
 .content-wrapper-one {
   max-width: 37rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   gap: 1.5rem;
 }
 
@@ -247,10 +224,6 @@ body {
 
 .content-wrapper-two {
   max-width: 32rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   gap: 1.5rem;
   padding: 4rem 0;
 }
@@ -343,18 +316,18 @@ body {
   .content-wrapper-two {
     max-width: 69.375rem;
     flex-direction: row;
-    gap: 0rem;
+    gap: 5.75rem;
     text-align: left;
+    /* padding: 6.875rem 0; */
   }
 
   .content-title-two {
     max-width: 21.875rem;
-    margin-right: 125px;
+    padding-right: 2rem;
   }
 
   .content-description-two {
     max-width: 21.875rem;
     margin-bottom: 0;
-    margin-right: 92px;
   }
 }
