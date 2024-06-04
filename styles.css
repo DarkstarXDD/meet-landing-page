@@ -264,6 +264,7 @@ body {
   max-width: 32rem;
   gap: 1.5rem;
   padding-block: 5.75rem 4.5rem;
+  padding-inline: 1.5rem;
 }
 
 .content-title-two {
