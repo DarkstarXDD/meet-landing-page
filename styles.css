@@ -258,13 +258,13 @@ body {
   background-size: cover;
   background-blend-mode: multiply;
   margin-top: -2.2rem;
+  padding-inline: 1.5rem;
 }
 
 .content-wrapper-two {
   max-width: 32rem;
   gap: 1.5rem;
   padding-block: 5.75rem 4.5rem;
-  padding-inline: 1.5rem;
 }
 
 .content-title-two {
