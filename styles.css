@@ -51,6 +51,7 @@ button {
   --clr-secondary-600: hsl(268, 100%, 86%);
 
   --clr-neutral-100: hsl(0, 0%, 98%);
+  --clr-neutral-300: hsl(240, 10%, 57%);
   --clr-neutral-400: hsl(240, 10%, 36%);
   --clr-neutral-900: hsl(240, 21%, 20%);
 
@@ -92,12 +93,13 @@ body {
   font-family: var(--ff-red-hat-display);
   font-size: var(--fs-primary-body);
   font-weight: var(--fw-medium);
+  line-height: 1.625;
   color: var(--clr-primary-body);
   background-color: var(--clr-neutral-100);
 }
 
 .header {
-  padding: 3rem 0;
+  padding-block: 3rem 3.375rem;
 }
 
 .logo-img {
@@ -107,7 +109,6 @@ body {
 
 .main {
   width: 100%;
-  max-width: 92.75rem;
   gap: 4rem;
 }
 
@@ -117,7 +118,7 @@ body {
 
 .section {
   text-align: center;
-  padding: 0 1.5rem;
+  padding-inline: 1.5rem;
 }
 
 .hero-section {
@@ -134,6 +135,7 @@ body {
 .hero-title {
   max-width: 20rem;
   font-size: var(--fs-primary-heading);
+  line-height: 1;
   color: var(--clr-primary-heading);
 }
 
@@ -148,7 +150,7 @@ body {
   color: var(--clr-neutral-100);
   border: none;
   border-radius: 50px;
-  padding: 1.5rem 2.5rem;
+  padding: 1.1rem 2.5rem;
 }
 
 .btn-primary {
@@ -177,13 +179,17 @@ body {
   background-color: var(--clr-primary-600-hover);
 }
 
+.btn-link {
+  padding: 1.1rem 1.65rem;
+}
+
 .content-section-one {
   gap: 4rem;
 }
 
 .number-line {
   height: 5.25rem;
-  border-left: 0.0625rem solid var(--clr-primary-body);
+  border-left: 0.0625rem solid var(--clr-neutral-300);
 }
 
 .number {
@@ -191,8 +197,13 @@ body {
   height: 3.5rem;
   font-size: var(--fs-secondary-body);
   font-weight: var(--fw-black);
-  border: 0.0625rem solid var(--clr-primary-body);
+  background-color: var(--clr-neutral-100);
+  border: 0.0625rem solid var(--clr-neutral-300);
   border-radius: 100%;
+}
+
+.number-two {
+  z-index: 1;
 }
 
 .image-grid {
@@ -215,11 +226,13 @@ body {
   font-size: var(--fs-secondary-body);
   font-weight: var(--fw-black);
   letter-spacing: 4px;
+  text-transform: uppercase;
   color: var(--clr-primary-400);
 }
 
 .content-title {
   font-size: var(--fs-secondary-heading);
+  line-height: 1.1;
   color: var(--clr-primary-heading);
 }
 
@@ -234,16 +247,22 @@ body {
 
 .content-section-two {
   width: 100%;
+  padding-inline: 0rem;
+}
+
+.bg-wrapper {
+  width: 100%;
   background-color: var(--clr-primary-400);
   background-image: url("/assets/images/mobile/image-footer.jpg");
   background-size: cover;
   background-blend-mode: multiply;
+  margin-top: -2.2rem;
 }
 
 .content-wrapper-two {
   max-width: 32rem;
   gap: 1.5rem;
-  padding: 4rem 0;
+  padding-block: 5.75rem 4.5rem;
 }
 
 .content-title-two {
@@ -263,6 +282,10 @@ body {
     --fs-900: 3rem;
   }
 
+  .header {
+    padding-block: 3rem 4rem;
+  }
+
   .main {
     gap: 5rem;
   }
@@ -275,18 +298,12 @@ body {
     flex-direction: row;
   }
 
-  .content-section-one {
-    gap: 3rem;
-  }
-
   .image-grid {
     grid-template-columns: repeat(4, 1fr);
     gap: 0.75rem;
-    margin-top: 1rem;
   }
 
   .content-wrapper-one {
-    max-width: 32rem;
     gap: 1rem;
   }
 
@@ -294,7 +311,7 @@ body {
     margin-top: 1rem;
   }
 
-  .content-section-two {
+  .bg-wrapper {
     background-image: url("/assets/images/tablet/image-footer.jpg");
   }
 
@@ -309,22 +326,32 @@ body {
     --fs-900: 4rem;
   }
 
+  body {
+    line-height: 1.44;
+  }
+
+  .header {
+    /* padding-block: 5rem 3.75rem; */
+    padding-block: 5rem 6.75rem;
+  }
+
   .main {
     gap: 4.5rem;
   }
 
   .hero-section {
-    grid-template-columns: minmax(0rem, 24rem) 33.75rem minmax(0rem, 24rem);
+    max-width: 94rem;
+    grid-template-columns: 1fr 33.75rem 1fr;
     gap: 5.5rem;
     padding: 0;
   }
 
   .picture-left {
-    align-self: flex-start;
+    align-self: start;
   }
 
   .picture-right {
-    align-self: flex-end;
+    align-self: end;
   }
 
   .hero-content {
@@ -345,15 +372,21 @@ body {
   }
 
   .content-section-one {
-    margin-top: 2.375rem;
+    margin-top: 3rem;
   }
 
   .image-grid {
     gap: 1.875rem;
   }
 
-  .content-section-two {
+  .content-wrapper-one {
+    max-width: 32rem;
+    margin-top: 1rem;
+  }
+
+  .bg-wrapper {
     background-image: url("/assets/images/desktop/image-footer.jpg");
+    background-position: center;
   }
 
   .content-wrapper-two {
@@ -361,11 +394,11 @@ body {
     flex-direction: row;
     gap: 5.75rem;
     text-align: left;
-    /* padding: 6.875rem 0; */
+    padding-block: 7.25rem 6.5rem;
   }
 
   .content-title-two {
-    max-width: 21.875rem;
+    max-width: 24rem;
     padding-right: 2rem;
   }
 
