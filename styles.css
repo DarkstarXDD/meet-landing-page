@@ -23,7 +23,7 @@
 }
 
 *:focus-visible {
-  outline: 0.125rem dotted green;
+  outline: 0.125rem dotted var(--clr-primary-400);
   outline-offset: 0.125rem;
 }
 
@@ -168,6 +168,7 @@ body {
 
 .btn-secondary {
   background-color: var(--clr-primary-600);
+  outline-color: var(--clr-primary-600);
 }
 
 .btn-secondary-selection {
