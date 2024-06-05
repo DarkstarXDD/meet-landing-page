@@ -114,29 +114,27 @@ body {
 
 .section {
   text-align: center;
-  padding-inline: 1.5rem;
+  padding-inline: 0;
 }
 
 .hero-section {
   display: grid;
   place-items: center;
   gap: 3rem;
-  padding-inline: 0;
+  overflow: hidden;
 }
 
 .picture-right {
   display: none;
 }
 
-.hero-img-wrapper {
-  max-width: 100%;
-  overflow-x: hidden;
+.picture-left {
+  overflow: hidden;
 }
 
-.picture-left,
-.picture-right {
+.hero-img {
   max-width: none;
-  width: 110vw;
+  width: 820px;
 }
 
 .hero-content {
@@ -290,7 +288,7 @@ body {
   margin-bottom: 0.5rem;
 }
 
-/* ------------------- Media Queries ------------------- */
+/* --------------- Media Queries --------------- */
 @media (min-width: 48rem) {
   :root {
     --fs-800: 2.5rem;
@@ -346,6 +344,7 @@ body {
   }
 
   .header {
+    /* padding-block: 5rem 3.75rem; */
     padding-block: 5rem 6.75rem;
   }
 
@@ -360,32 +359,17 @@ body {
     padding: 0;
   }
 
-  /* .picture-left {
+  .picture-left {
     align-self: start;
   }
 
   .picture-right {
     align-self: end;
-  } */
-
-  .hero-img-wrapper-left {
-    align-self: start;
-  }
-
-  .hero-img-wrapper-right {
-    align-self: end;
-  }
-
-  .picture-left,
-  .picture-right {
-    max-width: none;
-    width: 24.625rem;
   }
 
   .hero-content {
     max-width: none;
     gap: 2rem;
-    padding-inline: 0;
   }
 
   .hero-title {
