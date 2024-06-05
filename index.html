@@ -47,19 +47,21 @@
 
     <main class="main flex-column">
       <section class="section hero-section">
-        <picture class="picture-left">
-          <source
-            media="(min-width: 80rem)"
-            srcset="/assets/images/desktop/image-hero-left.png"
-          />
-          <img
-            class="hero-img"
-            src="/assets/images/tablet/image-hero.png"
-            alt="profile pictures of multiple people"
-            width="820"
-            height="303"
-          />
-        </picture>
+        <div class="hero-img-wrapper hero-img-wrapper-left flex-column">
+          <picture class="picture-left flex-column">
+            <source
+              media="(min-width: 80rem)"
+              srcset="/assets/images/desktop/image-hero-left.png"
+            />
+            <img
+              class="hero-img"
+              src="/assets/images/tablet/image-hero.png"
+              alt="profile pictures of multiple people"
+              width="820"
+              height="303"
+            />
+          </picture>
+        </div>
 
         <div class="hero-content flex-column">
           <h1 class="hero-title">Group Chat for Everyone</h1>
@@ -75,19 +77,21 @@
           </div>
         </div>
 
-        <picture class="picture-right">
-          <source
-            media="(min-width: 80rem)"
-            srcset="/assets/images/desktop/image-hero-right.png"
-          />
-          <img
-            class="hero-img"
-            src="/assets/images/tablet/image-hero.png"
-            alt="profile pictures of multiple people"
-            width="820"
-            height="303"
-          />
-        </picture>
+        <div class="hero-img-wrapper hero-img-wrapper-right flex-column">
+          <picture class="picture-right">
+            <source
+              media="(min-width: 80rem)"
+              srcset="/assets/images/desktop/image-hero-right.png"
+            />
+            <img
+              class="hero-img"
+              src="/assets/images/tablet/image-hero.png"
+              alt="profile pictures of multiple people"
+              width="820"
+              height="303"
+            />
+          </picture>
+        </div>
       </section>
 
       <section class="section content-section-one flex-column">
