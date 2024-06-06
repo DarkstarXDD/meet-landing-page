@@ -35,6 +35,7 @@ This is my solution to the [Meet Landing Page](https://www.frontendmentor.io/cha
 - On the design file there was an overflow effect on the hero image, i struggled a lot to achieve it, and with some help managed to get it to a working state. But in the end i ended up not using it. I liked the current solution without any overflowing effect on the image.
 - Used a negative margin to position the overlapping number 2 at the bottom.
 - Used a pseudo element to get the overlay color on section 2. Initially i tried the `background-blend-mode` property but couldn't get the exact color in the design file. So went with the pseudo element which gave the result that was needed.
+- There were couple of places where the color contrast wasn't passing the check, but i didn't want to change the colors in the design. As a result, couldn't hit the 100% mark on the lighthouse accessibilty test.
 - Overall it was a nice project. I loved this design, loved the colors and the layout. There were some minor inconsistencies in the design file values which i think could have been avoided but it was ok. The only thing i didn't like was the hero image overflow which i spent too much time trying to make it work.
 
 #
