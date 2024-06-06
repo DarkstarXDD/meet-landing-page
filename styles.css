@@ -14,7 +14,7 @@
     url("/assets/fonts/red-hat-display-v19-latin-900.woff");
 }
 
-/* --------------- CSS Reset --------------- */
+/* ------------------- CSS Reset ------------------- */
 * {
   padding: 0;
   margin: 0;
@@ -224,7 +224,7 @@ body {
 .ribbon-text {
   font-size: var(--fs-secondary-body);
   font-weight: var(--fw-black);
-  letter-spacing: 4px;
+  letter-spacing: 0.25rem;
   text-transform: uppercase;
   color: var(--clr-primary-400);
 }
